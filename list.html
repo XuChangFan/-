@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta content="no" name="apple-mobile-web-app-capable">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="./css/index.css">
+    <title></title>
+    <script>
+        (
+        	function(){
+        		var b=window.designWidth;delete window.designWidth;
+        		function a(e){
+        			e=e||b||375;var f=document.documentElement.clientWidth;
+        			if(f>640){
+        				f=640}else{if(f<320){f=320}
+        			}
+        			var c=(f/e)*100;document.documentElement.style.fontSize=c+"px";
+        			var d=window.getComputedStyle(document.documentElement).fontSize.replace("px","");
+        			if(d!==c){
+        				document.documentElement.style.fontSize=c*c/d+"px"
+        			}
+        		}
+        		a();
+        		window.addEventListener("resize",a,false)
+        	}
+        )();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
